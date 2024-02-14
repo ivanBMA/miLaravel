@@ -11,10 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('coberturas_medicas', function (Blueprint $table) {
+        Schema::create('cobertura_medicas', function (Blueprint $table) {
             $table->id();
             $table->Integer('codigo')->unique();
             $table->string('descripcion',200);
+            $table->timestamps();
 
         });
     }

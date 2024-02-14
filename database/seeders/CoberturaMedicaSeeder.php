@@ -3,19 +3,17 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
-use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Seeder;
-use App\Models\Paciente;
+use Illuminate\Database\Eloquent\Factories\Factory;
+use App\Models\CoberturaMedica;
 
-
-class PacienteSeeder extends Seeder
+class CoberturaMedicaSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        Paciente::factory(12)->create();
-
+        CoberturaMedica::factory(12)->create();
     }
 }
